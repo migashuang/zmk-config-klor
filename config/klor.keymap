@@ -71,7 +71,7 @@
          &kp Q  &kp W  &kp F      &kp P        &kp G                          &kp J    &kp L        &kp U      &kp Y    &kp SEMI
 &kp TAB  &kp A  &kp R  &kp S      &hm LSHFT T  &kp D                          &kp H    &hm RSHFT N  &kp E      &kp I    &kp O     &kp SQT
 &kp DEL  &kp Z  &kp X  &kp C      &kp V        &kp B      &trans    &trans    &kp K    &kp M        &kp COMMA  &kp DOT  &kp FSLH  &kp BSLH
-                       &kp LCTRL  &mo LOWER    &kp SPACE  &kp LALT  &kp LGUI  &kp RET  &mo RAISE    &kp BSPC
+                       &kp LCTRL  &mo 1        &kp SPACE  &kp LALT  &kp LGUI  &kp RET  &mo 2        &kp BSPC
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -124,10 +124,10 @@
                                  └─────────┴─────────┴─────────┴─────────┘└─────────┴─────────┴─────────┴─────────┘ */
 
             bindings = <
-           &trans  &trans     &trans      &trans  &trans                  &trans  &trans  &kp RA(U)  &trans  &trans
-&kp RA(A)  &trans  &kp RA(S)  &trans      &trans  &trans                  &trans  &trans  &trans     &trans  &kp RA(O)  &trans
-&trans     &trans  &trans     &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans     &trans
-                              &mo ADJUST  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+           &trans  &trans     &trans  &trans  &trans                  &trans  &trans  &kp RA(U)  &trans  &trans
+&kp RA(A)  &trans  &kp RA(S)  &trans  &trans  &trans                  &trans  &trans  &trans     &trans  &kp RA(O)  &trans
+&trans     &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans     &trans
+                              &mo 3   &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -159,15 +159,6 @@
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
-        };
-
-        layer_4 {
-            bindings = <
-        &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            >;
         };
     };
 };
