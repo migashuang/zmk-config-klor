@@ -53,10 +53,19 @@
 
         base {
             bindings = <
-        &kp Q  &kp W  &kp E   &kp R   &kp T                      &kp Y    &kp U     &kp I      &kp O    &kp P
-&trans  &kp A  &kp S  &kp D   &kp F   &kp G                      &kp H    &kp J     &kp K      &kp L    &kp SEMI  &trans
-&trans  &kp Z  &kp X  &kp C   &kp V   &kp B      &trans  &trans  &kp N    &kp M     &kp COMMA  &kp DOT  &kp FSLH  &trans
-                      &trans  &trans  &kp SPACE  &trans  &trans  &kp RET  &kp BSPC  &trans
+        &hm ESCAPE Q  &kp W  &kp E   &kp R        &kp T                      &kp Y    &kp U              &kp I      &kp O    &kp P
+&trans  &kp A         &kp S  &kp D   &hm LSHFT F  &kp G                      &kp H    &hm RIGHT_SHIFT J  &kp K      &kp L    &hm SQT SEMICOLON    &trans
+&trans  &kp Z         &kp X  &kp C   &kp V        &kp B      &trans  &trans  &kp N    &kp M              &kp COMMA  &kp DOT  &hm BACKSLASH SLASH  &trans
+                             &trans  &tog 1       &kp SPACE  &trans  &trans  &kp RET  &kp BSPC           &trans
+            >;
+        };
+
+        lower {
+            bindings = <
+       &kp N1    &kp N2       &kp N3    &kp N4      &kp N5                     &kp N6     &kp N7         &kp N8        &kp N9                &kp N0
+&none  &kp EXCL  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT                &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none
+&none  &none     &none        &none     &none       &none        &none  &none  &none      &none          &none         &none                 &none                  &none
+                              &none     &none       &none        &none  &none  &none      &none          &none
             >;
         };
     };
