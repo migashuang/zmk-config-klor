@@ -13,6 +13,7 @@
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
@@ -66,7 +67,7 @@
             bindings = <
         &trans  &trans    &kp UP_ARROW  &trans                   &trans                  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &kp LEFT  &kp DOWN      &kp RIGHT                &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans    &trans        &hm LG(LA(LS(V))) LG(V)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&to 3   &trans  &trans    &trans        &hm LG(LA(LS(V))) LG(V)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
                           &trans        &to 0                    &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
@@ -74,7 +75,7 @@
         sys {
             bindings = <
                 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                  &trans  &trans  &trans  &trans  &trans
-&bt BT_CLR_ALL  &trans        &trans        &trans        &trans        &trans                        &trans  &trans  &trans  &trans  &trans  &trans
+&bt BT_CLR_ALL  &bl BL_TOG    &bl BL_INC    &bl BL_DEC    &trans        &trans                        &trans  &trans  &trans  &trans  &trans  &trans
 &trans          &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
                                             &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans
             >;
